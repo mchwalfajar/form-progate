@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Lato', sans-serif;
+}
+
+body {
+     background: #f2f2f2;
+     padding: 0 10px;
+}
+
+.wrapper {
+     max-width: 500px;
+     width: 100%;
+     background: #fff;
+     margin: 20px auto;
+     padding: 30px;
+     box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+     border-radius: 5px;
+}
+
+.wrapper .title {
+     font-size: 24px;
+     font-weight: 600;
+     margin-bottom: 18px;
+     text-align: center;
+}
+
+.wrapper .form {
+     width: 100%;
+}
+
+.wrapper .form .input-field {
+     margin-bottom: 15px;
+     display: flex;
+     align-items: center;
+}
+
+.wrapper .form .input-field label {
+     width: 200px;
+     color: #2b2a2a;
+     margin-right: 10px;
+     font-size: 14px;
+}
+
+.wrapper .form .input-field .input,
+.wrapper .form .input-field .textarea {
+     width: 100%;
+     outline: none;
+     border: 1px solid #b7bbba;
+     font-size: 15px;
+     padding: 5px 10px;
+     border-radius: 3px;
+     transition: all 0.3% ease;
+}
+
+.wrapper .form .input-field .textarea {
+     resize: none;
+     height: 125px;
+}
+
+.wrapper .form .input-field .input:focus,
+.wrapper .form .input-field .textarea:focus {
+     border: 1px solid #0cffb6;
+}
+
+.wrapper .form .inputfield .btn {
+     width: 100%;
+     padding: 8px 10px;
+     font-size: 15px;
+     border: 0;
+     background: #04aa6d;
+     color: #fff;
+     cursor: pointer;
+     border-radius: 3px;
+     outline: none;
+     opacity: 0.8;
+}
+
+.wrapper .form .inputfield .btn:hover {
+     opacity: 1;
+}
+
+@media (max-width: 420px) {
+     .wrapper .form .input-field {
+          flex-direction: row;
+          align-items: flex-start;
+     }
+     .wrapper .form .input-field label {
+          margin-bottom: 5px;
+          display: flex;
+          align-items: center;
+     }
+}
